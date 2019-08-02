@@ -21,6 +21,7 @@ import android.support.v7.widget.*;
 import android.view.ViewGroup.*;
 import android.support.v4.graphics.drawable.DrawableCompat;
 
+
 public class MainActivity extends AppCompatActivity {
 	Toolbar toolbar;
 	private LinearLayout llroot;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 		loadjson(llroot, "Produk Terbaru", 26,0);
 		
 	}
+	AppCenter.start(getApplication(), "3fd2b99a-4d7d-4d4f-b038-a820ead528b4", Analytics.class, Crashes.class);
 	
 	private void loadjson(LinearLayout root, String title, int startpos, int endpos){
 		try {
