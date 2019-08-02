@@ -5,6 +5,10 @@ buildscript {
         jcenter()
     }
     dependencies {
+    def appCenterSdkVersion = '2.2.0'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+    
         classpath 'com.android.tools.build:gradle:1.+'
 
         // NOTE: Do not place your application dependencies here; they belong
